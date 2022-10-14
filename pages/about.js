@@ -23,10 +23,11 @@ const About = (props) => {
         <PageHeader text="About the Developer: Mayara Rodrigues" />
             <Card>
                 <Card.Body className="card bg-light" >
-                I'm an international student who came to Canada to improve my knowledge of the development area and my English as well. But unfortunately, COVID-19 mess up all my plans.
+                <p>I am an international student who came to Canada to improve my knowledge of the development area and my English as well. But unfortunately, COVID-19 mess up all my plans.
                 In my country, I specialized in SQL, queries and building reports. And today, here, doing this program, my challenge is to discover a new programming language that I like
-                , and I like SQL. Up to now, I'm more likely to follow WEB programming using JavaScript, I'm also doing ASP.NET in WEB524, but I remember much C++, a 
+                , and I like SQL. Up to now, I am more likely to follow WEB programming using JavaScript, I am also doing ASP.NET in WEB524, but I remember much C++, a 
                 traumatic course.
+                </p>
                 <br />
                 <br />
                 <footer className="card-footer text-muted-footer">

@@ -10,7 +10,7 @@
 ********************************************************************************/ 
 
 import React from "react";
-import { useRoute} from "next/router";
+import { useRouter } from "next/router";
 import useSWR from "swr";
 import MoviesDetails from "../../components/MoviesDetails";
 import Error from "next/error";
@@ -20,9 +20,10 @@ const MovieDetailsByTitle =() =>{
     const router = useRouter();
     const { title } = router.query;
 
-    const {data, error} = userSWR(`https://puce-bright-dolphin.cyclic.app/api/movies?page=1&perPage=10&title=${title}`);
+    const {data, error} = useSWR(`https://puce-bright-dolphin.cyclic.app/api/movies?page=1&perPage=10&title=${title}`);
 
-    if(typeof data ==='string' || data.trim() !== ''){
+    //if(typeof data ==='string' || data.value.trim() !== '')&& (data.length >0
+    if(data !== null || data !== undefined) {
         return(
             <>
             {data.map(movie => (
