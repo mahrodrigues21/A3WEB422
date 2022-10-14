@@ -26,7 +26,7 @@ const MovieDetailsByTitle =() =>{
     if(data !== null || data !== undefined) {
         return(
             <>
-            {data.map(movie => (
+            {data?.map((movie) => (
                 <div key={movie._id} >
                 <PageHeader text= {movie.title} />
                 <MoviesDetails movie={movie} />
