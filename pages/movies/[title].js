@@ -22,7 +22,6 @@ const MovieDetailsByTitle =() =>{
 
     const {data, error} = useSWR(`https://puce-bright-dolphin.cyclic.app/api/movies?page=1&perPage=10&title=${title}`);
 
-    //if(typeof data ==='string' || data.value.trim() !== '')&& (data.length >0
     if(data !== null || data !== undefined) {
         return(
             <>
