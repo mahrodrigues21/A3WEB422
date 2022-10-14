@@ -1,15 +1,3 @@
-/*********************************************************************************
-*  WEB422 – Assignment 3
-*  I declare that this assignment is my own work in accordance with Seneca Academic Policy.  
-*  No part of this assignment has been copied manually or electronically from any other source
-*  (including web sites) or distributed to other students.
-* 
-*  Name: Mayara Rodrigues Student ID: 118758200 Date: Oct 13, 2022
-*       URL: https://frightened-jade-woolens.cyclic.app/
-*
-*
-********************************************************************************/ 
-
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
